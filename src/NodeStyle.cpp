@@ -133,4 +133,5 @@ loadJsonFromByteArray(QByteArray const &byteArray)
   NODE_STYLE_READ_FLOAT(obj, ConnectionPointDiameter);
 
   NODE_STYLE_READ_FLOAT(obj, Opacity);
+  NODE_STYLE_READ_FLOAT(obj, BorderRadius);
 }

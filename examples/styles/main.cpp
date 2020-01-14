@@ -60,7 +60,8 @@ setStyle()
       "PenWidth": 2.0,
       "HoveredPenWidth": 2.5,
       "ConnectionPointDiameter": 10.0,
-      "Opacity": 1.0
+      "Opacity": 1.0,
+      "BorderRadius": 3.0
     }
   }
   )");

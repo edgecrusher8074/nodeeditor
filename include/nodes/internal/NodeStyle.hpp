@@ -52,5 +52,7 @@ public:
   float ConnectionPointDiameter;
 
   float Opacity;
+
+  float BorderRadius;
 };
 }
