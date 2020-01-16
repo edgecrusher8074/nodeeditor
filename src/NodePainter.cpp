@@ -382,7 +382,7 @@ drawValidationRect(QPainter * painter,
       painter->setBrush(nodeStyle.WarningColor);
     }
 
-    double const radius = 3.0;
+    float radius = nodeStyle.BorderRadius;
 
     float diam = nodeStyle.ConnectionPointDiameter;
 
