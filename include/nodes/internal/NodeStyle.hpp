@@ -54,5 +54,6 @@ public:
   float Opacity;
 
   float BorderRadius;
+  float NodeSpacing;
 };
 }

@@ -24,7 +24,6 @@ NodeGeometry(std::unique_ptr<NodeDataModel> const &dataModel)
   , _inputPortWidth(70)
   , _outputPortWidth(70)
   , _entryHeight(20)
-  , _spacing(20)
   , _hovered(false)
   , _nSources(dataModel->nPorts(PortType::Out))
   , _nSinks(dataModel->nPorts(PortType::In))
@@ -33,6 +32,9 @@ NodeGeometry(std::unique_ptr<NodeDataModel> const &dataModel)
   , _fontMetrics(QFont())
   , _boldFontMetrics(QFont())
 {
+  auto const &nodeStyle = StyleCollection::nodeStyle();
+  _spacing = static_cast<unsigned int>(nodeStyle.NodeSpacing);
+
   QFont f; f.setBold(true);
 
   _boldFontMetrics = QFontMetrics(f);
